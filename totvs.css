@@ -1,0 +1,447 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(background\ totvs.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#dataToday {
+  display: none;
+}
+
+.container {
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  margin-left: -55px;
+}
+
+.header {
+  background-color: #eee;
+  padding: 20px;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form button {
+  background-image: linear-gradient(to right, rgba(98, 0, 255, 0), rgb(0, 110, 255));
+  transition: all 1s ease;
+  border: 2px solid #313035;
+  color: black;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.form button:hover {
+  background-image: linear-gradient(to right, rgb(0, 162, 255), rgba(98, 0, 255, 0));
+  letter-spacing: 1px;
+}
+
+
+/* Error and Success */
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+#img_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 60%;
+    margin-left: 27px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .container {
+    width: 50%;
+    margin-right: 17px;
+    height: 100vh;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  ;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 23px;
+    display: none;
+  }
+
+  #img_mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .container {
+    height: 122vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logo {
+    display: none;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 23px;
+    display: none;
+  }
+
+  .container {
+    height: 120vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+  #img_mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .logo {
+    display: none;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 23px;
+    display: none;
+  }
+
+  .container {
+    height: 117vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+  #img_mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+
+}
+
+@media screen and (max-width: 450px) and (max-height:700px) {
+
+
+  button {
+    margin-top: 5px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+  .container {
+    height: 115vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 430px) {
+
+
+  .container {
+    height: 112vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+
+}
+
+@media screen and (max-width: 410px) {
+
+
+  .container {
+    height: 111vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+
+  .container {
+    height: 110vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+
+}
+
+@media screen and (max-width: 420px) and (max-height:700px) {
+  .container {
+    height: 111vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) and (max-height:700px) {
+  .container {
+    height: 110vh;
+  }
+}
+
+
+@media screen and (max-width: 390px) and (max-height:700px) {
+
+  .container {
+
+    padding: 5px;
+    height: 90vh;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 390px) {
+
+
+  .container {
+    height: 110vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+
+}
+
+@media screen and (max-width: 362px) and (max-height:700px) {
+
+
+
+  button {
+    margin-top: 19px;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 361px) {
+
+
+  .container {
+    height: 110vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+
+}
+
+@media screen and (max-width: 345px) and (max-height:700px) {
+
+
+
+  button {
+    margin-top: 19px;
+  }
+
+}
+
+@media screen and (max-width: 345px) {
+
+
+  .container {
+    height: 113vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+
+}
+
+@media screen and (max-width: 310px) {
+
+
+  .container {
+    height: 113vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+
+}
+
+
+.loading {
+  width: 8%;
+  animation: spin 0.7s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
